@@ -1,0 +1,360 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button {
+  border: 0;
+  border-radius: 1.8125rem;
+  padding: 1rem 2.5rem;
+  color: #FAFAFA;
+  cursor: pointer;
+  transition: background-color 0.5s ease-out;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 0;
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+#app {
+  padding: 3rem 2rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.buttonBlue {
+  background-color: #4D96A9;
+}
+.buttonBlue:hover {
+  background-color: #71C0D4;
+}
+
+.buttonPurple {
+  background-color: #855FB1;
+}
+.buttonPurple:hover {
+  background-color: #B18BDD;
+}
+
+.colorCyan300 {
+  color: #8FE3F9;
+}
+
+.colorPurple300 {
+  color: #D9B8FF;
+}
+
+.contentText {
+  text-align: center;
+  color: #87879D;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 0;
+}
+@media (min-width: 60rem) {
+  .contentText {
+    font-size: 1.125rem;
+  }
+}
+
+.logo {
+  padding: 3rem 5rem 0 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.number {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.numberCircle {
+  border: 1px solid #D1D1DF;
+  border-radius: 100%;
+  height: 56px;
+  width: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #87879D;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 0;
+}
+
+.numberLine {
+  height: 80px;
+  width: 1px;
+  color: #D1D1DF;
+}
+
+.section0 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr fit-content(100%);
+}
+
+.section0Left {
+  grid-column: 1/span 1;
+  grid-row: 1/span 1;
+}
+
+.section0Right {
+  grid-column: 2/span 1;
+  grid-row: 1/span 1;
+}
+
+.section0Content {
+  padding: 3rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/span 2;
+  grid-row: 2/span 1;
+}
+
+.section0ContentButtons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.section0ContentTitle {
+  text-align: center;
+  color: #28283D;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 110%;
+  letter-spacing: 0;
+}
+@media (min-width: 37.5rem) {
+  .section0ContentTitle {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 60rem) {
+  .section0ContentTitle {
+    font-size: 4rem;
+  }
+}
+
+.section1 {
+  padding: 2rem 2rem 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 4rem;
+}
+
+.section1Wrapper {
+  padding: 2rem 2rem 4rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+@media (min-width: 37.5rem) {
+  .section1Wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+.section1Image {
+  border-radius: 0.5rem;
+}
+
+.section1Image1 {
+  grid-column: 1/span 1;
+  grid-row: 1/span 1;
+}
+@media (min-width: 37.5rem) {
+  .section1Image1 {
+    grid-column: 1/span 1;
+    grid-row: 1/span 1;
+  }
+}
+
+.section1Image2 {
+  grid-column: 2/span 1;
+  grid-row: 1/span 1;
+}
+@media (min-width: 37.5rem) {
+  .section1Image2 {
+    grid-column: 2/span 1;
+    grid-row: 1/span 1;
+  }
+}
+
+.section1Image3 {
+  grid-column: 1/span 1;
+  grid-row: 2/span 1;
+}
+@media (min-width: 37.5rem) {
+  .section1Image3 {
+    grid-column: 3/span 1;
+    grid-row: 1/span 1;
+  }
+}
+
+.section1Image4 {
+  grid-column: 2/span 1;
+  grid-row: 2/span 1;
+}
+@media (min-width: 37.5rem) {
+  .section1Image4 {
+    grid-column: 4/span 1;
+    grid-row: 1/span 1;
+  }
+}
+
+.section1Content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+.section1ContentHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.section1ContentHeaderSubtitle {
+  text-align: center;
+  color: #87879D;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  font-size: 0.75rem;
+  line-height: 110%;
+  letter-spacing: 0.25rem;
+}
+@media (min-width: 37.5rem) {
+  .section1ContentHeaderSubtitle {
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 60rem) {
+  .section1ContentHeaderSubtitle {
+    font-size: 1rem;
+  }
+}
+
+.section1ContentHeaderTitle {
+  text-align: center;
+  color: #28283D;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 110%;
+  letter-spacing: 0;
+}
+@media (min-width: 37.5rem) {
+  .section1ContentHeaderTitle {
+    font-size: 2.25rem;
+  }
+}
+@media (min-width: 60rem) {
+  .section1ContentHeaderTitle {
+    font-size: 2.5rem;
+  }
+}
+
+.section2 {
+  padding: 0 2rem 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1.5rem;
+  position: relative;
+}
+
+.section2BackgroundColor {
+  background-color: #4D96A9;
+  width: 100%;
+  top: 108px;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.section2BackgroundImage {
+  width: 100%;
+  top: 108px;
+  position: absolute;
+  z-index: 0;
+}
+
+.section2Title {
+  text-align: center;
+  color: #FAFAFA;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 110%;
+  letter-spacing: 0;
+}
+@media (min-width: 37.5rem) {
+  .section2Title {
+    font-size: 2.25rem;
+  }
+}
+@media (min-width: 60rem) {
+  .section2Title {
+    font-size: 2.5rem;
+  }
+}
+
+.section2Text {
+  text-align: center;
+  color: #FAFAFA;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 0;
+}
+@media (min-width: 60rem) {
+  .section2Text {
+    font-size: 1.125rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
