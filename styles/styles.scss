@@ -20,7 +20,6 @@ $space-80px: functions.to-rem(80px);
 $space-72px: functions.to-rem(72px);
 $space-64px: functions.to-rem(64px);
 $space-56px: functions.to-rem(56px);
-$space-55px: functions.to-rem(55px);
 $space-48px: functions.to-rem(48px);
 $space-40px: functions.to-rem(40px);
 $space-36px: functions.to-rem(36px);
@@ -39,7 +38,7 @@ $footer-height: functions.to-rem(363px);
 $number-height: functions.to-rem(108px);
 $number-line-height: functions.to-rem(80px);
 $number-circle-height: functions.to-rem(56px);
-$section-content-1-width: functions.to-rem(710px);
+$section-content-1-width: functions.to-rem(720px);
 $section-content-0-width: functions.to-rem(550px);
 $image-height: functions.to-rem(144px);
 $image-width-desktop: 17.8vw;
@@ -200,7 +199,6 @@ h1, h2, p {
 }
 
 .contentText {
-  padding: 0 $space-4px;
   text-align: center;
   color: $color-slate-600;
 
@@ -347,6 +345,50 @@ h1, h2, p {
   }
 }
 
+.section1Content {
+  padding: 0 $space-32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: $space-32px;
+
+  @include tablet-and-up {
+    padding: 0 $space-110px;
+  }
+
+  @include desktop-and-up {
+    max-width: $section-content-1-width;
+  }
+}
+
+.section1ContentHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: $space-16px;
+}
+
+.section1ContentHeaderSubtitle {
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-cyan-600;
+
+  @include text-preset-3;
+}
+
+.section1ContentHeaderTitle {
+  text-align: center;
+  color: $color-slate-900;
+
+  @include text-preset-2;
+
+  @include desktop-and-up {
+    padding: 0 $space-24px;
+  }
+}
+
 .section1Wrapper {
   padding: 0 $space-24px;
   width: 100%;
@@ -422,50 +464,6 @@ h1, h2, p {
   @include tablet-and-up {
     grid-column: 4 / span 1;
     grid-row: 1 / span 1;
-  }
-}
-
-.section1Content {
-  padding: 0 $space-32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  row-gap: $space-32px;
-
-  @include tablet-and-up {
-    padding: 0 $space-110px;
-  }
-
-  @include desktop-and-up {
-    max-width: $section-content-1-width;
-  }
-}
-
-.section1ContentHeader {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  row-gap: $space-16px;
-}
-
-.section1ContentHeaderSubtitle {
-  text-align: center;
-  text-transform: uppercase;
-  color: $color-cyan-600;
-
-  @include text-preset-3;
-}
-
-.section1ContentHeaderTitle {
-  text-align: center;
-  color: $color-slate-900;
-
-  @include text-preset-2;
-
-  @include desktop-and-up {
-    padding: 0 $space-55px;
   }
 }
 
