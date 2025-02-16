@@ -28,12 +28,17 @@ h1, h2, p {
 }
 
 #app {
-  padding: 3rem 2rem;
+  padding: 3rem 2rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: #D1D1DF;
 }
 
 .attribution a {
@@ -63,6 +68,7 @@ h1, h2, p {
 }
 
 .contentText {
+  padding: 0 0.25rem;
   text-align: center;
   color: #87879D;
   font-family: "Red Hat Display", sans-serif;
@@ -78,11 +84,7 @@ h1, h2, p {
 }
 
 .logo {
-  padding: 3rem 5rem 0 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin-bottom: 4rem;
 }
 
 .number {
@@ -95,6 +97,7 @@ h1, h2, p {
 .numberCircle {
   border: 1px solid #D1D1DF;
   border-radius: 100%;
+  background-color: #FAFAFA;
   height: 56px;
   width: 56px;
   display: flex;
@@ -111,33 +114,42 @@ h1, h2, p {
 .numberLine {
   height: 80px;
   width: 1px;
-  color: #D1D1DF;
+  background-color: #D1D1DF;
 }
 
 .section0 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr fit-content(100%);
+  justify-content: center;
+  align-items: center;
 }
 
 .section0Left {
+  height: 168px;
+  width: auto;
   grid-column: 1/span 1;
   grid-row: 1/span 1;
+  place-self: center;
 }
 
 .section0Right {
+  height: 168px;
+  width: auto;
   grid-column: 2/span 1;
   grid-row: 1/span 1;
+  place-self: center;
 }
 
 .section0Content {
-  padding: 3rem 2rem 2rem 2rem;
+  padding: 3rem 4rem 2rem 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   grid-column: 1/span 2;
   grid-row: 2/span 1;
+  row-gap: 1.5rem;
 }
 
 .section0ContentButtons {
@@ -149,6 +161,7 @@ h1, h2, p {
 }
 
 .section0ContentTitle {
+  padding: 0 1rem;
   text-align: center;
   color: #28283D;
   font-family: "Red Hat Display", sans-serif;
@@ -169,7 +182,7 @@ h1, h2, p {
 }
 
 .section1 {
-  padding: 2rem 2rem 4rem 2rem;
+  padding: 2rem 0 4rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -178,7 +191,7 @@ h1, h2, p {
 }
 
 .section1Wrapper {
-  padding: 2rem 2rem 4rem 2rem;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -187,13 +200,16 @@ h1, h2, p {
 }
 @media (min-width: 37.5rem) {
   .section1Wrapper {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
   }
 }
 
 .section1Image {
   border-radius: 0.5rem;
+  height: 144px;
+  width: auto;
+  place-self: center;
 }
 
 .section1Image1 {
@@ -258,7 +274,8 @@ h1, h2, p {
 
 .section1ContentHeaderSubtitle {
   text-align: center;
-  color: #87879D;
+  text-transform: uppercase;
+  color: #4D96A9;
   font-family: "Red Hat Display", sans-serif;
   font-weight: 900;
   font-size: 0.75rem;
@@ -297,7 +314,7 @@ h1, h2, p {
 }
 
 .section2 {
-  padding: 0 2rem 4rem 2rem;
+  padding: 0 0.25rem 4rem 0.25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -308,18 +325,22 @@ h1, h2, p {
 
 .section2BackgroundColor {
   background-color: #4D96A9;
-  width: 100%;
+  height: 363px;
+  width: calc(100% + 4rem);
   top: 108px;
   position: absolute;
-  z-index: 0;
-  opacity: 0.5;
+  z-index: -1;
+  opacity: 0.8;
 }
 
 .section2BackgroundImage {
-  width: 100%;
+  height: 363px;
+  width: calc(100% + 4rem);
   top: 108px;
   position: absolute;
-  z-index: 0;
+  z-index: -2;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .section2Title {
