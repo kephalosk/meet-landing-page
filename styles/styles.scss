@@ -230,6 +230,10 @@ h1, h2, p {
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
   place-self: center;
+
+  @include tablet-and-up {
+    height: 318px;
+  }
 }
 
 .section0Right {
@@ -238,6 +242,10 @@ h1, h2, p {
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
   place-self: center;
+
+  @include tablet-and-up {
+    height: 318px;
+  }
 }
 
 .section0Content {
@@ -249,6 +257,10 @@ h1, h2, p {
   grid-column: 1 / span 2;
   grid-row: 2 / span 1;
   row-gap: $space-24px;
+
+  @include tablet-and-up {
+    padding: $space-48px 200px $space-32px 200px;
+  }
 }
 
 .section0ContentButtons {
@@ -257,6 +269,11 @@ h1, h2, p {
   justify-content: center;
   align-items: center;
   row-gap: $space-16px;
+
+  @include tablet-and-up {
+    flex-direction: row;
+    column-gap: $space-16px;
+  }
 }
 
 .section0ContentTitle {
@@ -274,6 +291,10 @@ h1, h2, p {
   justify-content: center;
   align-items: center;
   row-gap: $space-64px;
+
+  @include tablet-and-up {
+    padding: $space-80px 0 $space-64px 0;
+  }
 }
 
 .section1Wrapper {
@@ -343,6 +364,10 @@ h1, h2, p {
   justify-content: center;
   align-items: center;
   row-gap: $space-32px;
+
+  @include tablet-and-up {
+    padding: 0 110px;
+  }
 }
 
 .section1ContentHeader {
@@ -376,6 +401,10 @@ h1, h2, p {
   align-items: center;
   row-gap: $space-24px;
   position: relative;
+
+  @include tablet-and-up {
+    padding: 0 100px $space-64px 100px;
+  }
 }
 
 .section2BackgroundColor {
@@ -386,16 +415,27 @@ h1, h2, p {
   position: absolute;
   z-index: -1;
   opacity: 0.8;
+
+  @include tablet-and-up {
+    width: 140%;
+    left: -20%;
+  }
 }
 
 .section2BackgroundImage {
   height: 363px;
   width: calc(100% + $space-64px);
   top: 108px;
+  left: -$space-32px;
   position: absolute;
   z-index: -2;
   object-fit: cover;
   overflow: hidden;
+
+  @include tablet-and-up {
+    width: 140%;
+    left: -20%;
+  }
 }
 
 .section2Title {
